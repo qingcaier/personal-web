@@ -27,6 +27,7 @@
     "eslint-plugin-vue": "^6.1.2",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
+    "vue-scroller": "^2.2.4",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -35,13 +36,31 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/essential",
-      "@vue/standard"
+      "plugin:vue/essential"
     ],
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "no-multiple-empty-lines": [
+        0,
+        {
+          "max": 2
+        }
+      ],
+      "no-mixed-spaces-and-tabs": [
+        0,
+        "smart-tabs"
+      ],
+      "semi": [
+        0,
+        "always"
+      ],
+      "indent": [
+        0,
+        4
+      ]
+    }
   },
   "browserslist": [
     "> 1%",
